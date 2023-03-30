@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#lottoContent{
+    /* margin: auto; */
+    margin-top: 70px;
+    text-align: center;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+    font-size: 28px;
+}
+
+input{
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:lighter;
+    height: 3rem;
+}
+
+#numberPrediction{
+    font-weight: 600;
+    font-size: 22px;
+    color: red;
+}
