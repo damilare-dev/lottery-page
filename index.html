@@ -45,23 +45,24 @@
         let random = Math.floor(Math.random() * 11);
         let numberPrediction = "";
         
-          if (inputNumber != random ){
+
+        if(inputNumber == ""){
+            document.getElementById('numberPrediction').innerHTML = "Type a Number"
+          }
+
+          else if( inputNumber > 10 ) {
+            document.getElementById('numberPrediction').innerHTML = "Invalid Input, Try Again! This time, from 0 - 10"
+          }
+
+
+         else if (inputNumber != random ){
                 document.getElementById('numberPrediction').innerHTML = "You lose, Try Again! " +
                 "Your guess was "+ inputNumber + " & Computer predicted " + random
           }
 
-           if(inputNumber == ""){
-            document.getElementById('numberPrediction').innerHTML = "Type a Number"
-          }
-
-           if( inputNumber > 10 ) {
-            document.getElementById('numberPrediction').innerHTML = "Invalid Input, Try Again! This time, from 1 - 10"
-          }
-
-          else if ( inputNumber == random){
+          else{ inputNumber == random
             document.getElementById('numberPrediction').style.color = green.innerHTML = "Congratulations, you win! Your guess of " + inputNumber + " was correct " +
                 "with that of the computer " + random
-                console.log(yes)
           }
 
       }
